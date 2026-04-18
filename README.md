@@ -4,7 +4,7 @@ A full-scale, end-to-end marketing analytics system I designed to simulate how a
 
 This is not a dashboard demo, it’s a fully modeled analytics ecosystem with aligned funnel, attribution, and operational data designed to mirror real-world decision environments, supported by automated monitoring that tracks ETL pipeline health, logs failures, and triggers alerts.
 
-Link: <iframe title="ProductionV1.2" width="600" height="373.5" src="https://app.powerbi.com/view?r=eyJrIjoiODA5YjY4MzItNzNjOC00YTE3LTlkMTItYmQ1OGZmNDA0NmZlIiwidCI6IjgwZTBlYWJhLTY4NTQtNDg5Ny04NjgxLTIxYmFlZDk2NWEzMCJ9" frameborder="0" allowFullScreen="true"></iframe>
+[View Live Dashboard](https://app.powerbi.com/view?r=YOUR_LINK)
 
 ---
 
@@ -54,7 +54,7 @@ are fully aligned, standardized, and measurable within a single model.
 
 This is the end-to-end architecture that powers the platform:
 
-![System Flow](./images/NorthStar_Pipeline_Schema_Flow.svg)
+![System Flow](./Workflows/NorthStar_Pipeline_Schema_Flow.svg)
 
 This platform is designed as a full analytics pipeline, not just a reporting layer.
 
@@ -70,7 +70,7 @@ The pipeline is supported by monitoring and logging infrastructure that tracks r
 
 This project includes full pipeline documentation covering data ingestion, validation, identity resolution, attribution modeling, and audit layer design.
 
-[View CRM Pipeline Process Documentation](./images/CRM_Pipeline_Process_Documentation.docx)
+[View CRM Pipeline Process Documentation](./Workflows/CRM_Pipeline_Process_Documentation.docx)
 
 ---
 
@@ -103,7 +103,7 @@ The reporting layer is designed to move from high-level portfolio insights to de
 
 ### Executive Summary (Portfolio-Level View)
 
-![Executive Summary](./Executive%20Summary.png)
+![Executive Summary](./Read_Me_Images/Executive%20Summary.png)
 
 The executive dashboard provides a top-down view of marketing and operational performance, combining spend, leasing outcomes, and portfolio health into a single view.
 
@@ -119,7 +119,7 @@ This view is designed to answer:
 
 ### Funnel Performance & Vendor Analysis
 
-![Funnel View](./images/funnel_view.png)
+![Funnel View](./Read_Me_Images/funnel_view.png)
 
 The funnel page breaks down marketing performance across the full conversion path:
 
@@ -138,7 +138,7 @@ This enables:
 
 ### Geography Performance & Market Risk
 
-![Geography View](./images/geography_view.png)
+![Geography View](./Read_Me_Images/geography_view.png)
 
 The geography page connects marketing efficiency to location-based performance, helping identify where spend is working, where intervention is needed, and where scale opportunities exist.
 
@@ -154,7 +154,7 @@ This answers:
 
 ### Operations & Property Health
 
-![Operations View](./images/operations_view.png)
+![Operations View](./Read_Me_Images/operations_view.png)
 
 Operational metrics are integrated directly with marketing performance to connect demand generation with leasing outcomes.
 
@@ -170,7 +170,7 @@ This answers:
 
 ### Drillthrough: Vendor & Funnel Trends
 
-![Funnel Detail](./images/funnel_detail.png)
+![Funnel Detail](./Read_Me_Images/funnel_detail.png)
 
 Vendor-level drillthrough provides detailed trend analysis across time.
 
@@ -187,7 +187,7 @@ This enables:
 
 ### Drillthrough: Property-Level Operational Trends
 
-![Operations Detail](./images/operations_detail.png)
+![Operations Detail](./Read_Me_Images/operations_detail.png)
 
 Operations drillthrough allows individual properties to be reviewed in detail over time.
 
@@ -204,7 +204,7 @@ This allows:
 
 ### Drillthrough: Geography Detail by Property
 
-![Geography Detail](./images/geography_detail.png)
+![Geography Detail](./Read_Me_Images/geography_detail.png)
 
 Geography drillthrough extends the market-level view into specific properties, making it possible to evaluate local performance in context.
 
@@ -375,10 +375,10 @@ Power BI files and full datasets are intentionally excluded from this repository
 
 Detailed technical documentation for each scoring model is available below. These documents outline full calculation logic, DAX structure, normalization methods, and design rationale.
 
-- 📄 [Vendor Performance Index (VPI)](./images/VPI_Reference.docx)
-- 📄 [Operations Index](./images/Operations_Index_Reference.docx)
-- 📄 [Geography Performance Index (GPI)](./images/GPI_Reference_v2.docx)
-- 📄 [Portfolio Health Index (PHI)](./images/PHI_Reference.docx)
+- 📄 [Vendor Performance Index (VPI)](./Index_Scores_Documents/VPI_Reference.docx)
+- 📄 [Operations Index](./Index_Scores_Documents/Operations_Index_Reference.docx)
+- 📄 [Geography Performance Index (GPI)](./Index_Scores_Documents/GPI_Reference_v2.docx)
+- 📄 [Portfolio Health Index (PHI)](./Index_Scores_Documents/PHI_Reference.docx)
 
 These references reflect production-level model design, including benchmark methodologies, weighting frameworks, and performance tiering logic.
 
@@ -402,7 +402,7 @@ Each metric in the system is evaluated across three dimensions:
 
 These dimensions are combined to convert raw data into **performance signals**, rather than isolated values.
 
-![Trend](./images/trend.png)
+![Trend](./Read_Me_Images/trend.png)
 
 ---
 
@@ -418,7 +418,7 @@ Metrics are not evaluated in isolation.
 
 This allows the system to determine whether a result is **good, neutral, or concerning**, not just higher or lower.
 
-![Benchmark](./images/benchmark.png)
+![Benchmark](./Read_Me_Images/benchmark.png)
 ---
 
 ### Trend + Snapshot Integration
@@ -434,7 +434,7 @@ For example:
 
 This prevents misinterpretation of performance based on a single point in time.
 
-![TrendChart](./images/trendchart.png)
+![TrendChart](./Read_Me_Images/trendchart.png)
 ---
 
 ### Signal-Based Indicators
@@ -463,7 +463,7 @@ Examples include:
 
 This transforms the dashboard from a monitoring tool into a **decision support system**.
 
-![Call_To_Action](./images/call_to_action.png)
+![Call_To_Action](./Read_Me_Images/call_to_action.png)
 ---
 
 ### Dynamic Context-Aware Logic
@@ -473,11 +473,11 @@ All calculations and signals dynamically adapt based on user selection:
 - Region → Market → Property hierarchy  
 - Vendor and channel filters  
 - Time window selection  
-![Region](./images/region.png)
+![Region](./Read_Me_Images/region.png)
 
 Measures recalculate within the selected context, meaning:
 
-![Property](./images/property.png)
+![Property](./Read_Me_Images/property.png)
 
 - Benchmarks adjust to the appropriate level  
 - Signals reflect localized performance  
