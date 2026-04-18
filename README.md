@@ -102,7 +102,7 @@ The reporting layer is designed to move from high-level portfolio insights to de
 
 ### Executive Summary (Portfolio-Level View)
 
-![Executive Summary](./executive_summary.png)
+![Executive Summary](./Executive Summary.png)
 
 The executive dashboard provides a top-down view of marketing and operational performance, combining spend, leasing outcomes, and portfolio health into a single view.
 
