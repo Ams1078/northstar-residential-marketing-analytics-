@@ -4,11 +4,13 @@ A full-scale, end-to-end marketing analytics system I designed to simulate how a
 
 This is not a dashboard demo, it’s a fully modeled analytics ecosystem with aligned funnel, attribution, and operational data designed to mirror real-world decision environments, supported by automated monitoring that tracks ETL pipeline health, logs failures, and triggers alerts.
 
+Link: <iframe title="ProductionV1.2" width="600" height="373.5" src="https://app.powerbi.com/view?r=eyJrIjoiODA5YjY4MzItNzNjOC00YTE3LTlkMTItYmQ1OGZmNDA0NmZlIiwidCI6IjgwZTBlYWJhLTY4NTQtNDg5Ny04NjgxLTIxYmFlZDk2NWEzMCJ9" frameborder="0" allowFullScreen="true"></iframe>
+
 ---
 
 ## Executive Dashboard
 
-![Executive Summary](./Executive%20Summary.png)
+![Executive Summary](./Read_Me_Images/Executive%20Summary.png)
 
 *A portfolio-level view of marketing performance, leasing efficiency, and operational health across 120 properties, 12 markets, and 4 regions, built using real-world marketing analytics frameworks and domain and real world experience to reflect how performance is measured in practice.
 
