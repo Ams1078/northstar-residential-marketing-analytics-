@@ -510,6 +510,22 @@ This layer was built with a clear goal:
 The system does not rely on users to interpret raw data.  
 Instead, it provides structured signals, contextual explanations, and actionable guidance to support faster and more consistent decision-making.
 ---
+
+## What This Demonstrates
+
+This project reflects the design of a modern marketing analytics system that goes beyond reporting.
+
+It demonstrates:
+
+- End-to-end pipeline thinking (ingestion → validation → modeling → reporting)
+- Multi-layered performance scoring frameworks
+- Context-aware analytical logic and decisioning systems
+- Integration of marketing, leasing, and operational data
+- Structured, documented, and reproducible analytics design
+
+The goal was not to build a dashboard, but to simulate how a real organization measures performance, identifies issues, and makes decisions using data.
+
+---
 ## Repository Use
 This repository is intended for review as a **case study**, not as a runnable or production codebase. Each document can be reviewed independently to understand the project approach, decision-making process, and outcomes.
 
