@@ -4,7 +4,7 @@ A full-scale, end-to-end marketing analytics system I designed to simulate how a
 
 This is not a dashboard demo, it’s a fully modeled analytics ecosystem with aligned funnel, attribution, and operational data designed to mirror real-world decision environments, supported by automated monitoring that tracks ETL pipeline health, logs failures, and triggers alerts.
 
-[View Live Dashboard](https://app.powerbi.com/view?r=YOUR_LINK)
+[View Live Dashboard](https://app.powerbi.com/view?r=https://app.powerbi.com/view?r=eyJrIjoiODA5YjY4MzItNzNjOC00YTE3LTlkMTItYmQ1OGZmNDA0NmZlIiwidCI6IjgwZTBlYWJhLTY4NTQtNDg5Ny04NjgxLTIxYmFlZDk2NWEzMCJ9)
 
 ---
 
