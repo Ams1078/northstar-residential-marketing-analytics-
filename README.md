@@ -369,6 +369,18 @@ Power BI files and full datasets are intentionally excluded from this repository
 
 ---
 
+## Technical Documentation
+
+Detailed technical documentation for each scoring model is available below. These documents outline full calculation logic, DAX structure, normalization methods, and design rationale.
+
+- 📄 [Vendor Performance Index (VPI)](./images/VPI_Reference.docx)
+- 📄 [Operations Index](./images/Operations_Index_Reference.docx)
+- 📄 [Geography Performance Index (GPI)](./images/GPI_Reference_v2.docx)
+- 📄 [Portfolio Health Index (PHI)](./images/PHI_Reference.docx)
+
+These references reflect production-level model design, including benchmark methodologies, weighting frameworks, and performance tiering logic.
+
+---
 ## Repository Use
 This repository is intended for review as a **case study**, not as a runnable or production codebase. Each document can be reviewed independently to understand the project approach, decision-making process, and outcomes.
 
