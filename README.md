@@ -1,11 +1,16 @@
-# Northstar Residential Group — Marketing Analytics Case Study
+# Northstar Residential Group — Marketing Analytics Platform
 
-## Engagement Overview
-Northstar Residential Group is a fictional, enterprise-scale multifamily real estate company used for this portfolio case study. The organization operates a large, geographically distributed property portfolio and invests heavily in digital marketing to drive leasing demand.
+A full-scale, end-to-end marketing analytics system I designed to simulate how a real multifamily real estate organization measures performance. Connecting marketing spend and attribution to leasing outcomes and occupancy through a continuously updated, deterministic data pipeline.
 
-This engagement represents the introduction of a dedicated **marketing analytics dashboard** built in Power BI. At the time of the project, marketing performance was primarily reported through legacy SSRS tabular reports, which limited visibility, slowed decision-making, and made it difficult for marketing stakeholders to interpret performance across channels, markets, and properties.
+This is not a dashboard demo — it’s a fully modeled analytics ecosystem with aligned funnel, attribution, and operational data designed to mirror real-world decision environments.
 
-This dashboard was designed specifically for the Marketing organization and exists independently from other enterprise BI initiatives within the company.
+---
+
+## Executive Dashboard
+
+![Executive Summary]((./executive_summary.png))
+
+A portfolio-level view of marketing performance, leasing efficiency, and operational health across 120 properties, 12 markets, and 4 regions — modeled on real-world marketing analytics frameworks and domain experience.
 
 ---
 
