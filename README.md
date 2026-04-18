@@ -8,7 +8,7 @@ This is not a dashboard demo — it’s a fully modeled analytics ecosystem with
 
 ## Executive Dashboard
 
-![Executive Summary]((./executive_summary.png))
+![Executive Summary](./Executive%20Summary.png)
 
 A portfolio-level view of marketing performance, leasing efficiency, and operational health across 120 properties, 12 markets, and 4 regions — modeled on real-world marketing analytics frameworks and domain experience.
 
