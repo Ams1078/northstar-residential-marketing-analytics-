@@ -416,6 +416,7 @@ Metrics are not evaluated in isolation.
 
 This allows the system to determine whether a result is **good, neutral, or concerning**, not just higher or lower.
 
+![Benchmark](./images/benchmark.png)
 ---
 
 ### Trend + Snapshot Integration
@@ -431,6 +432,7 @@ For example:
 
 This prevents misinterpretation of performance based on a single point in time.
 
+![TrendChart](./images/trendchart.png)
 ---
 
 ### Signal-Based Indicators
@@ -459,6 +461,7 @@ Examples include:
 
 This transforms the dashboard from a monitoring tool into a **decision support system**.
 
+![Call_To_Action](./images/call_to_action.png)
 ---
 
 ### Dynamic Context-Aware Logic
@@ -468,8 +471,11 @@ All calculations and signals dynamically adapt based on user selection:
 - Region → Market → Property hierarchy  
 - Vendor and channel filters  
 - Time window selection  
+![Region](./images/region.png)
 
 Measures recalculate within the selected context, meaning:
+
+![Property](./images/property.png)
 
 - Benchmarks adjust to the appropriate level  
 - Signals reflect localized performance  
@@ -503,7 +509,7 @@ This layer was built with a clear goal:
 
 The system does not rely on users to interpret raw data.  
 Instead, it provides structured signals, contextual explanations, and actionable guidance to support faster and more consistent decision-making.
-
+---
 ## Repository Use
 This repository is intended for review as a **case study**, not as a runnable or production codebase. Each document can be reviewed independently to understand the project approach, decision-making process, and outcomes.
 
