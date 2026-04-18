@@ -94,7 +94,6 @@ The objective of this project was to design a unified analytics system that coul
 
 ---
 
----
 
 ## Dashboard Walkthrough
 
@@ -102,13 +101,13 @@ The reporting layer is designed to move from high-level portfolio insights to de
 
 ### Executive Summary (Portfolio-Level View)
 
-![Executive Summary](./Executive Summary.png)
+![Executive Summary](./Executive%20Summary.png)
 
 The executive dashboard provides a top-down view of marketing and operational performance, combining spend, leasing outcomes, and portfolio health into a single view.
 
-- Portfolio Health score aggregates leasing efficiency, occupancy, and demand conversion  
-- Spend vs outcome visuals highlight over-invested and under-invested regions  
-- Signal-based indicators identify weakest pillars, risk areas, and performance trends  
+- Portfolio Health score aggregates leasing efficiency, occupancy, and demand conversion
+- Spend vs outcome visuals highlight over-invested and under-invested regions
+- Signal-based indicators identify weakest pillars, risk areas, and performance trends
 
 This view is designed to answer:
 - Where is the portfolio underperforming?
@@ -124,14 +123,30 @@ The funnel page breaks down marketing performance across the full conversion pat
 
 **Impressions → Clicks → Leads → Visits → Leases**
 
-- Funnel drop-off highlights conversion bottlenecks  
-- Vendor performance is ranked based on consistency and efficiency  
-- Contribution vs results analysis identifies spend inefficiencies  
+- Funnel drop-off highlights conversion bottlenecks
+- Vendor performance is ranked based on consistency and efficiency
+- Contribution vs results analysis identifies spend inefficiencies
 
 This enables:
-- Identification of underperforming channels  
-- Reallocation of budget toward higher-performing vendors  
+- Identification of underperforming channels
+- Reallocation of budget toward higher-performing vendors
 - Diagnosis of funnel leakage
+
+---
+
+### Geography Performance & Market Risk
+
+![Geography View](./images/geography_view.png)
+
+The geography page connects marketing efficiency to location-based performance, helping identify where spend is working, where intervention is needed, and where scale opportunities exist.
+
+- GPI logic classifies areas into performance groupings such as efficient, high performing, rethink, and underinvested
+- Regional and market signals surface highest-risk areas, best ROI areas, and concentration of intervention needs
+- Map and scatterplot views make it easier to compare property-level outcomes across geographies
+
+This answers:
+- Which markets are underperforming relative to spend?
+- Where should strategy be scaled, rethought, or corrected?
 
 ---
 
@@ -141,9 +156,9 @@ This enables:
 
 Operational metrics are integrated directly with marketing performance to connect demand generation with leasing outcomes.
 
-- Vacancy fill, absorption days, and SLA compliance highlight operational risk  
-- Risk distribution identifies critical vs optimized properties  
-- Portfolio exposure visuals show demand vs leasing pressure  
+- Vacancy fill, absorption days, and SLA compliance highlight operational risk
+- Risk distribution identifies critical vs optimized properties
+- Portfolio exposure visuals show demand vs leasing pressure
 
 This answers:
 - Which properties are operationally at risk?
@@ -151,51 +166,54 @@ This answers:
 
 ---
 
-### Drillthrough: Property-Level Trends
-
-![Operations Detail](./images/operations_detail.png)
-
-Drillthrough enables deep analysis at the property level.
-
-From any high-level view, users can navigate to detailed pages showing:
-
-- Occupancy trends over time  
-- Net absorption and unit flow  
-- Leasing readiness vs fill rate  
-- Index scoring and performance ranking  
-
-This allows:
-- Identification of localized performance issues  
-- Tracking of trends over time  
-- Validation of whether interventions are working  
-
----
-
 ### Drillthrough: Vendor & Funnel Trends
 
 ![Funnel Detail](./images/funnel_detail.png)
 
-Vendor-level drillthrough provides detailed trend analysis across time:
+Vendor-level drillthrough provides detailed trend analysis across time.
 
-- Marketing spend vs efficiency over time  
-- Funnel performance trends (leads, visits, leases)  
-- Cost and conversion metrics by period  
+- Marketing spend vs efficiency over time
+- Funnel performance trends across leads, visits, and leases
+- Cost and conversion metrics by period
 
 This enables:
-- Monitoring of vendor consistency  
-- Identification of declining performance trends  
-- Evaluation of marketing efficiency over time  
-## Project Artifacts
-This repository contains documentation and artifacts covering the full lifecycle of the engagement, including:
-- Scenario and discovery documentation
-- Business requirements and scope definition
-- Marketing KPI frameworks and definitions
-- Data model design and data dictionary
-- Dashboard wireframes and UX decisions
-- Final insights and recommendations
+- Monitoring of vendor consistency
+- Identification of declining performance trends
+- Evaluation of marketing efficiency over time
 
-Artifacts are organized chronologically by project phase to reflect a real analytics delivery process.
+---
 
+### Drillthrough: Property-Level Operational Trends
+
+![Operations Detail](./images/operations_detail.png)
+
+Operations drillthrough allows individual properties to be reviewed in detail over time.
+
+- Occupancy trends, unit flow, and net absorption
+- Leasing readiness vs fill rate
+- Property-level scoring, ranking, and weakest/strongest components
+
+This allows:
+- Identification of localized operational issues
+- Validation of whether interventions are working
+- Tracking of property health over time
+
+---
+
+### Drillthrough: Geography Detail by Property
+
+![Geography Detail](./images/geography_detail.png)
+
+Geography drillthrough extends the market-level view into specific properties, making it possible to evaluate local performance in context.
+
+- Spend, leases, cost per lease, sell rate, and lead-to-lease by property
+- Trend views compare property-level results against regional patterns
+- GPI detail surfaces top and bottom measurements for a property
+
+This enables:
+- Deeper diagnosis of regional underperformance
+- Comparison of property results against market and region expectations
+- Identification of whether issues are driven by marketing efficiency, leasing conversion, or broader operational conditions
 ---
 
 ## Data & Privacy Notice
