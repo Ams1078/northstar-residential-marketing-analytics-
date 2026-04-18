@@ -47,25 +47,20 @@ are fully aligned, standardized, and measurable within a single model.
 
 ---
 
+
 ## System Flow
 
-The platform is built as a connected analytics system rather than a standalone report.
+This is the end-to-end architecture that powers the platform:
 
-```text
-Synthetic Source Generation
-        ↓
-Bronze Ingest
-        ↓
-Silver Standardization + Validation
-        ↓
-Identity Resolution + Attribution Logic
-        ↓
-Gold Fact Tables
-        ↓
-Power BI Semantic Model + Executive Reporting
-        ↓
-Pipeline Monitoring, Logging, and Alerts
+![System Flow](./images/NorthStar_Pipeline_Schema_Flow.svg)
 
+This platform is designed as a full analytics pipeline, not just a reporting layer.
+
+Data flows from synthetic source generation through bronze ingestion, silver standardization, identity resolution, and attribution modeling before being published to gold fact tables that power the Power BI semantic model.
+
+Each stage includes validation, data quality checks, and audit logging to ensure that marketing activity can be consistently traced from spend through funnel performance, prospect journeys, leasing outcomes, and operational results.
+
+The pipeline is supported by monitoring and logging infrastructure that tracks run status, captures failures, enforces watermark-based processing, and triggers alerts when issues occur.
 
 ---
 
