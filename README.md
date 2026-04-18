@@ -64,19 +64,50 @@ The pipeline is supported by monitoring and logging infrastructure that tracks r
 
 ---
 
-## Scope of Work
-**In scope**
-- Marketing-focused discovery and requirements gathering  
-- KPI framework definition and documentation  
-- Data model design using simulated enterprise data  
-- Power BI dashboard wireframing and development  
-- Insight development and strategic recommendations  
-- Full project documentation (scenario, requirements, data dictionary, wireframes)
+## Technical Deep Dive
 
-**Out of scope**
-- Enterprise BI dashboards outside of Marketing  
-- Financial, accounting, or operational reporting  
-- Production data pipelines or live system integrations  
+This project includes full pipeline documentation covering data ingestion, validation, identity resolution, attribution modeling, and audit layer design.
+
+[View CRM Pipeline Process Documentation](./images/CRM_Pipeline_Process_Documentation.docx)
+
+---
+
+## Engagement Overview
+
+Northstar Residential Group is a fictional, enterprise-scale multifamily real estate company used for this portfolio case study. The organization operates a large, geographically distributed property portfolio and relies heavily on digital marketing to drive leasing demand.
+
+This engagement simulates the design and delivery of a dedicated marketing analytics platform built to replace legacy SSRS-based reporting, which provided accurate data but lacked visibility, flexibility, and the ability to connect performance across the full marketing and leasing lifecycle.
+
+At the time of the engagement, marketing stakeholders faced several limitations:
+
+- Performance data was fragmented across platforms (ad networks, CRM, property systems)  
+- Reporting was static and difficult to interpret at an executive level  
+- Attribution between marketing activity and leasing outcomes was unclear  
+- Data quality issues (duplicate records, inconsistent identifiers, incomplete CRM data) created additional uncertainty  
+
+The objective of this project was to design a unified analytics system that could:
+
+- Align marketing spend, funnel performance, and leasing outcomes  
+- Provide consistent attribution across channels and touchpoints  
+- Surface performance at the portfolio, market, and property level  
+- Improve visibility into both marketing efficiency and operational impact  
+
+---
+
+## Role & Ownership
+
+I led this engagement end-to-end, acting as both the marketing analytics lead and system designer.
+
+This included:
+
+- Defining the marketing KPI framework and measurement strategy  
+- Translating legacy reporting into a modern analytical model  
+- Designing the data model and attribution logic  
+- Building the Power BI reporting layer and executive dashboard  
+- Developing supporting pipeline logic, validation rules, and audit tracking  
+- Generating insights and strategic recommendations  
+
+This role required bridging domain knowledge in digital marketing, CRM data, and performance measurement with technical implementation across data modeling, pipeline design, and reporting.
 
 ---
 
