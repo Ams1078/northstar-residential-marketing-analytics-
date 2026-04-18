@@ -94,23 +94,97 @@ The objective of this project was to design a unified analytics system that coul
 
 ---
 
-## Role & Ownership
+---
 
-I led this engagement end-to-end, acting as both the marketing analytics lead and system designer.
+## Dashboard Walkthrough
 
-This included:
+The reporting layer is designed to move from high-level portfolio insights to detailed, drillthrough analysis at the vendor, region, market, and property level.
 
-- Defining the marketing KPI framework and measurement strategy  
-- Translating legacy reporting into a modern analytical model  
-- Designing the data model and attribution logic  
-- Building the Power BI reporting layer and executive dashboard  
-- Developing supporting pipeline logic, validation rules, and audit tracking  
-- Generating insights and strategic recommendations  
+### Executive Summary (Portfolio-Level View)
 
-This role required bridging domain knowledge in digital marketing, CRM data, and performance measurement with technical implementation across data modeling, pipeline design, and reporting.
+![Executive Summary](./executive_summary.png)
+
+The executive dashboard provides a top-down view of marketing and operational performance, combining spend, leasing outcomes, and portfolio health into a single view.
+
+- Portfolio Health score aggregates leasing efficiency, occupancy, and demand conversion  
+- Spend vs outcome visuals highlight over-invested and under-invested regions  
+- Signal-based indicators identify weakest pillars, risk areas, and performance trends  
+
+This view is designed to answer:
+- Where is the portfolio underperforming?
+- Where should attention be prioritized?
 
 ---
 
+### Funnel Performance & Vendor Analysis
+
+![Funnel View](./images/funnel_view.png)
+
+The funnel page breaks down marketing performance across the full conversion path:
+
+**Impressions → Clicks → Leads → Visits → Leases**
+
+- Funnel drop-off highlights conversion bottlenecks  
+- Vendor performance is ranked based on consistency and efficiency  
+- Contribution vs results analysis identifies spend inefficiencies  
+
+This enables:
+- Identification of underperforming channels  
+- Reallocation of budget toward higher-performing vendors  
+- Diagnosis of funnel leakage
+
+---
+
+### Operations & Property Health
+
+![Operations View](./images/operations_view.png)
+
+Operational metrics are integrated directly with marketing performance to connect demand generation with leasing outcomes.
+
+- Vacancy fill, absorption days, and SLA compliance highlight operational risk  
+- Risk distribution identifies critical vs optimized properties  
+- Portfolio exposure visuals show demand vs leasing pressure  
+
+This answers:
+- Which properties are operationally at risk?
+- How is marketing impacting leasing outcomes?
+
+---
+
+### Drillthrough: Property-Level Trends
+
+![Operations Detail](./images/operations_detail.png)
+
+Drillthrough enables deep analysis at the property level.
+
+From any high-level view, users can navigate to detailed pages showing:
+
+- Occupancy trends over time  
+- Net absorption and unit flow  
+- Leasing readiness vs fill rate  
+- Index scoring and performance ranking  
+
+This allows:
+- Identification of localized performance issues  
+- Tracking of trends over time  
+- Validation of whether interventions are working  
+
+---
+
+### Drillthrough: Vendor & Funnel Trends
+
+![Funnel Detail](./images/funnel_detail.png)
+
+Vendor-level drillthrough provides detailed trend analysis across time:
+
+- Marketing spend vs efficiency over time  
+- Funnel performance trends (leads, visits, leases)  
+- Cost and conversion metrics by period  
+
+This enables:
+- Monitoring of vendor consistency  
+- Identification of declining performance trends  
+- Evaluation of marketing efficiency over time  
 ## Project Artifacts
 This repository contains documentation and artifacts covering the full lifecycle of the engagement, including:
 - Scenario and discovery documentation
