@@ -381,6 +381,127 @@ Detailed technical documentation for each scoring model is available below. Thes
 These references reflect production-level model design, including benchmark methodologies, weighting frameworks, and performance tiering logic.
 
 ---
+
+## Analytical Logic & Decisioning Layer
+
+This platform is designed to go beyond traditional reporting by embedding analytical logic directly into the user experience.
+
+Rather than presenting static metrics or trends, the system continuously evaluates performance using benchmark comparisons, trend analysis, and rule-based logic to generate interpretable signals and recommended actions.
+
+---
+
+### From Metrics to Signals
+
+Each metric in the system is evaluated across three dimensions:
+
+- **Current Performance** → Where is the metric relative to defined benchmarks?  
+- **Trend Direction** → Is performance improving, declining, or stable over time?  
+- **Contextual Comparison** → How does performance compare across regions, markets, and properties?  
+
+These dimensions are combined to convert raw data into **performance signals**, rather than isolated values.
+
+---
+
+### Benchmark-Aware Interpretation
+
+Metrics are not evaluated in isolation.
+
+- Performance is compared against **fixed benchmark ranges** or **portfolio baselines**  
+- Indicators dynamically adjust based on whether a metric is:
+  - Above expected range  
+  - Within acceptable range  
+  - Below benchmark thresholds  
+
+This allows the system to determine whether a result is **good, neutral, or concerning**, not just higher or lower.
+
+---
+
+### Trend + Snapshot Integration
+
+The platform simultaneously presents:
+
+- **Snapshot values** (current state)
+- **Trend context** (direction over time)
+
+For example:
+- A metric may be above benchmark but declining → flagged for monitoring  
+- A metric may be below benchmark but improving → flagged as recovering  
+
+This prevents misinterpretation of performance based on a single point in time.
+
+---
+
+### Signal-Based Indicators
+
+The dashboard surfaces structured signals to direct attention:
+
+- **Weakest Pillar** → Identifies the lowest-performing component of portfolio health  
+- **Sharpened Decline / Improvement Signals** → Highlights meaningful changes over time  
+- **Risk Indicators** → Flags SLA breaches, coverage issues, or operational pressure  
+- **Spend vs Outcome Signals** → Identifies over-invested vs under-invested areas  
+
+These signals are designed to reduce analysis time and prioritize focus.
+
+---
+
+### Built-In Calls to Action
+
+Each signal is paired with contextual interpretation and recommended next steps.
+
+Examples include:
+
+- Investigating vendor efficiency when cost increases without conversion improvement  
+- Reviewing funnel breakdowns when conversion declines  
+- Prioritizing properties with sustained operational risk signals  
+- Reallocating spend toward efficient regions or channels  
+
+This transforms the dashboard from a monitoring tool into a **decision support system**.
+
+---
+
+### Dynamic Context-Aware Logic
+
+All calculations and signals dynamically adapt based on user selection:
+
+- Region → Market → Property hierarchy  
+- Vendor and channel filters  
+- Time window selection  
+
+Measures recalculate within the selected context, meaning:
+
+- Benchmarks adjust to the appropriate level  
+- Signals reflect localized performance  
+- Recommendations remain relevant to the scope being analyzed  
+
+This ensures that insights remain accurate whether viewing the entire portfolio or a single property.
+
+---
+
+### Interactive Analysis & Drillthrough
+
+The system supports deep exploration through:
+
+- Drillthrough from portfolio → region → property → vendor  
+- Trend views for validating signal behavior over time  
+- Tooltip-based metric explanations including purpose, interpretation, and calculation logic  
+
+This allows users to move from:
+
+**Signal → Investigation → Root Cause → Action**
+
+within a single analytical workflow.
+
+---
+
+### Design Philosophy
+
+This layer was built with a clear goal:
+
+> Transform reporting into guided analysis.
+
+The system does not rely on users to interpret raw data.  
+Instead, it provides structured signals, contextual explanations, and actionable guidance to support faster and more consistent decision-making.
+
 ## Repository Use
 This repository is intended for review as a **case study**, not as a runnable or production codebase. Each document can be reviewed independently to understand the project approach, decision-making process, and outcomes.
 
