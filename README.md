@@ -215,7 +215,153 @@ This enables:
 - Comparison of property results against market and region expectations
 - Identification of whether issues are driven by marketing efficiency, leasing conversion, or broader operational conditions
 ---
+---
 
+## Performance Index Framework
+
+At the core of the system is a multi-index scoring framework designed to translate complex, multi-source data into clear, actionable performance signals.
+
+Rather than relying on raw metrics alone, the platform uses four purpose-built index models — each answering a different business question — and integrates them into a unified decisioning layer.
+
+---
+
+### The Four-Index Model
+
+The system is structured around four complementary indexes:
+
+- **Vendor Performance Index (VPI)** → Marketing effectiveness  
+- **Operations Index** → Property operational health  
+- **Geography Performance Index (GPI)** → Market-level stability and momentum  
+- **Portfolio Health Index (PHI)** → Unified portfolio performance  
+
+Each index uses a **different normalization philosophy**, intentionally designed to reflect the nature of the question it answers.
+
+This avoids a common analytics mistake: forcing all performance into a single scoring logic.
+
+---
+
+### Vendor Performance Index (Marketing Performance)
+
+The Vendor Performance Index evaluates how effectively each marketing vendor drives leasing outcomes across the full funnel:
+
+**Impressions → Clicks → Visits → Leads → Leases**
+
+- Uses a **benchmark credit system** against trailing portfolio averages  
+- Applies **funnel-stage weighting**, with conversion carrying the highest impact  
+- Adapts dynamically to vendor participation (not all vendors operate across all stages)
+
+This allows marketing performance to be evaluated in context — not just volume, but efficiency and conversion quality.
+
+:contentReference[oaicite:0]{index=0}
+
+---
+
+### Operations Index (Operational Health)
+
+The Operations Index measures whether properties are operationally capable of converting demand into occupancy.
+
+It is built from seven core components:
+
+- Occupancy
+- Vacancy exposure
+- Absorption speed
+- Coverage ratio
+- Lease velocity
+- Net absorption
+- SLA compliance
+
+Each component is normalized against **fixed performance ranges**, creating a consistent 0–100 score representing operational readiness.
+
+This index acts as a **leading indicator of leasing risk**, identifying breakdowns before they impact occupancy.
+
+:contentReference[oaicite:1]{index=1}
+
+---
+
+### Geography Performance Index (Market Stability & Momentum)
+
+The Geography Performance Index evaluates how markets and regions are performing over time.
+
+It combines two distinct perspectives:
+
+- **Pillar 1 (60%) — Stability**  
+  Performance vs prior-year portfolio benchmark  
+
+- **Pillar 2 (40%) — Momentum**  
+  Improvement or decline vs the immediately preceding period  
+
+This dual-pillar design allows the model to distinguish between:
+
+- Stable vs declining markets  
+- Recovering vs historically strong markets  
+
+Importantly, GPI is not a ranking system — it measures **performance relative to a market’s own history**, not other geographies.
+
+:contentReference[oaicite:2]{index=2}
+
+---
+
+### Portfolio Health Index (Unified Performance)
+
+The Portfolio Health Index (PHI) combines all domains into a single, interpretable score.
+
+It is structured across three pillars:
+
+- Operations (35%)
+- Marketing Funnel (35%)
+- Geo / Actual Outcomes (30%)
+
+Each pillar uses **fixed absolute ranges**, meaning the score reflects performance against a defined standard — not relative comparison.
+
+This creates a stable, executive-level signal of overall portfolio health.
+
+:contentReference[oaicite:3]{index=3}
+
+---
+
+### Why Multiple Indexes Instead of One?
+
+Each index answers a different question:
+
+| Index | What It Answers |
+|------|----------------|
+| VPI | Are vendors driving efficient, high-quality demand? |
+| Operations Index | Can properties convert demand into occupancy? |
+| GPI | Are markets improving or declining over time? |
+| PHI | Is the overall portfolio healthy? |
+
+A single score cannot capture all of these dimensions without losing meaning.
+
+---
+
+### Portfolio Health Score (Dashboard Layer)
+
+While the underlying index framework is preserved, the dashboard introduces a **Portfolio Health Score** to provide a simplified executive view.
+
+This score:
+
+- Aggregates signals across marketing, operations, and leasing outcomes  
+- Avoids directly blending incompatible normalization methods  
+- Acts as a **top-level health indicator**, not a replacement for underlying indexes  
+
+The design intentionally separates:
+
+- **Analytical scoring (indexes)**  
+- **Executive summarization (portfolio health)**  
+
+This ensures that detail and accuracy are not lost in simplification.
+
+---
+
+### Design Philosophy
+
+This system was built with three principles:
+
+- **Separation of concerns** — each index answers a specific question  
+- **Context-aware scoring** — normalization method matches the business problem  
+- **Actionability over reporting** — every score is tied to a decision  
+
+The result is not just a reporting layer, but a structured decision framework that connects marketing investment, operational execution, and leasing outcomes.
 ## Data & Privacy Notice
 Northstar Residential Group is a fictional company created for portfolio purposes. All data used in this project is simulated. Table structures, KPIs, and reporting logic are modeled after real enterprise marketing analytics environments, but no proprietary or client data is included.
 
