@@ -400,6 +400,8 @@ Each metric in the system is evaluated across three dimensions:
 
 These dimensions are combined to convert raw data into **performance signals**, rather than isolated values.
 
+![Trend](./images/trend.png)
+
 ---
 
 ### Benchmark-Aware Interpretation
